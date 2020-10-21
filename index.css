@@ -1,21 +1,41 @@
-body {
-
-}
 h1 {
-
+    font-family: "Andale Mono", monospace;
+    size: 20px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 h2 {
-
+    font-family: "Andale Mono", monospace;
+    size: 16px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 p {
-
+    font-family: "Roboto";
+    color: darkgray;
+    max-width: 80%;
+    margin-left: 10%;
 }
 strong {
-
+    font-weight: bold;
 }
 li:nth-child(odd) {
-
+    color: lightslategray;
 }
 li:nth-child(even) {
+    color: gray;
+}
 
+ul {
+    margin-left: 10%;
+}
+
+.vyhody {
+    color: lightgreen;
+}
+
+.nevyhody {
+    color: lightcoral;
 }
