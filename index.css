@@ -14,7 +14,7 @@ h2 {
 }
 p {
     font-family: "Roboto";
-    color: darkgray;
+    color: grey;
     max-width: 80%;
     margin-left: 10%;
 }
@@ -22,14 +22,15 @@ strong {
     font-weight: bold;
 }
 li:nth-child(odd) {
-    color: lightslategray;
+    color: lightsteelblue;
 }
 li:nth-child(even) {
-    color: gray;
+    color: lightskyblue;
 }
 
 ul {
-    margin-left: 10%;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 .vyhody {
@@ -38,4 +39,33 @@ ul {
 
 .nevyhody {
     color: lightcoral;
+}
+
+#carouselExampleIndicators
+{
+    width: 50%;
+    margin-left: 25%;
+
+}
+
+table {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    border: #e3e4e6 1px solid;
+
+}
+
+th {
+    background-color: #e3e4e6
+}
+
+table h2 {
+    padding-top: unset;
+    padding-bottom: unset
+}
+
+td {
+    border-left: #e3e4e6 1px solid;
+    border-right: #e3e4e6 1px solid;
 }
