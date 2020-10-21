@@ -1,13 +1,13 @@
 h1 {
     font-family: "Andale Mono", monospace;
-    size: 20px;
+    font-size: 20px;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 50px;
 }
 h2 {
     font-family: "Andale Mono", monospace;
-    size: 16px;
+    font-size: 16px;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 25px;
@@ -53,7 +53,7 @@ table {
     margin-left: 25%;
     text-align: center;
     border: #e3e4e6 1px solid;
-
+    table-layout: fixed;
 }
 
 th {
@@ -66,6 +66,5 @@ table h2 {
 }
 
 td {
-    border-left: #e3e4e6 1px solid;
     border-right: #e3e4e6 1px solid;
 }
