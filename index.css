@@ -15,6 +15,7 @@ h2 {
 p {
     font-family: "Roboto";
     color: grey;
+    line-height: 1.6;
 }
 strong {
     font-weight: bold;
@@ -35,6 +36,7 @@ strong {
 
 table {
     margin-left: 25%;
+    margin-top: 50px;
     width: 50%;
     text-align: center;
     border: #e3e4e6 1px solid;
@@ -42,11 +44,12 @@ table {
 }
 
 th {
-    background-color: #e3e4e6
+    background-color: #e3e4e6;
 }
 
 td {
     border-right: #e3e4e6 1px solid;
+    padding-top: 5px;
 }
 
 .content {
