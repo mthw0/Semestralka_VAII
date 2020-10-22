@@ -15,24 +15,10 @@ h2 {
 p {
     font-family: "Roboto";
     color: grey;
-    max-width: 80%;
-    margin-left: 10%;
 }
 strong {
     font-weight: bold;
 }
-li:nth-child(odd) {
-    color: lightsteelblue;
-}
-li:nth-child(even) {
-    color: lightskyblue;
-}
-
-ul {
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-
 .vyhody {
     color: lightgreen;
 }
@@ -43,14 +29,13 @@ ul {
 
 #carouselExampleIndicators
 {
-    width: 50%;
     margin-left: 25%;
-
+    width: 50%;
 }
 
 table {
-    width: 50%;
     margin-left: 25%;
+    width: 50%;
     text-align: center;
     border: #e3e4e6 1px solid;
     table-layout: fixed;
@@ -60,11 +45,11 @@ th {
     background-color: #e3e4e6
 }
 
-table h2 {
-    padding-top: unset;
-    padding-bottom: unset
-}
-
 td {
     border-right: #e3e4e6 1px solid;
+}
+
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
 }
