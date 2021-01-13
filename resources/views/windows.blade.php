@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link href="{{ URL::asset('css/css.css') }}" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="{{ URL::asset('js/linux_obrazok.js') }}"></script>
 <div class="content">
     <h1>Windows 10</h1>
     <p>
@@ -33,5 +33,11 @@
         </tr>
 
     </table>
+
+    <figure>
+        <img id="obrazok" title="Kliknutim na obrazok prejdete do rezimu celej obrazovky." onclick="launchIntoFullscreen(document.documentElement)" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Windows10abstract.png" alt="Windows 10 image">
+        <figcaption>Obrazok zobrazuje vzhľad OS Windows.</figcaption>
+    </figure>
+
 </div>
 @endsection

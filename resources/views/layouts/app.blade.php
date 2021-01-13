@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                            <a class="nav-link" href="{{ route('linux') }}">{{__('Linuxe') }}</a>
+                            <a class="nav-link" href="{{ route('linux') }}">{{__('Linux') }}</a>
                             <a class="nav-link" href="{{ route('windows') }}">{{__('Windows') }}</a>
                             <a class="nav-link" href="{{ route('mac') }}">{{__('Mac') }}</a>
 						@auth
@@ -77,6 +77,7 @@
                                 </div>
                             </li>
                         @endguest
+
                     </ul>
                 </div>
             </div>
@@ -86,5 +87,12 @@
             @yield('content')
         </main>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div id="autor" class="text-muted">Autor: <a href="mailto:matej.mrenica@stud.uniza.sk">Matej Mrenica</a></div>
+
+        </div>
+    </footer>
 </body>
 </html>

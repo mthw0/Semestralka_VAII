@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <link href="{{ URL::asset('css/css.css') }}" rel="stylesheet" type="text/css" >
+
+
 <div class="content">
 <h1>Linux</h1>
 <p>
@@ -36,5 +37,6 @@
     </tr>
 
 </table>
+    <div id="Hodiny" onload="zobrazCas()"></div>
 </div>
 @endsection

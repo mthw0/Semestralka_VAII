@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link href="{{ URL::asset('css/css.css') }}" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="{{ URL::asset('js/ajax1.js') }}"></script>
     <div class="content">
         <h1>Úvod</h1>
         <p>
@@ -9,6 +9,8 @@
         <p>
             Obsahuje podstránky zaoberajúce sa operačnými systémami.
         </p>
+
+        <p id="viac" onclick="loadDoc()">Načítať viac...</p>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -36,9 +38,6 @@
                 <span class="sr-only">Ďalší</span>
             </a>
         </div>
-
-        <p>
-            Autor: <a href="mailto:matej.mrenica@stud.uniza.sk">Matej Mrenica</a>
-        </p>
     </div>
+
 @endsection
