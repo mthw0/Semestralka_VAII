@@ -1,2 +1,2 @@
-#Semestrálna práca z VAII
-Používa laravel
+## Semestrálna práca z VAII
+Používa Laravel
