@@ -10903,10 +10903,6 @@ a.text-dark:focus {
   }
 }
 
-body {
-  margin-bottom: 50px;
-}
-
 h1 {
   font-family: "Andale Mono", monospace;
   font-size: 20px;
@@ -11010,5 +11006,26 @@ figcaption {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#tlacidla {
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.pridat {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#oramovanie {
+  padding: 20px;
+}
+
+#nadpis {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 

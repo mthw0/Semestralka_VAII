@@ -36,6 +36,7 @@
                             <a class="nav-link" href="{{ route('linux') }}">{{__('Linux') }}</a>
                             <a class="nav-link" href="{{ route('windows') }}">{{__('Windows') }}</a>
                             <a class="nav-link" href="{{ route('mac') }}">{{__('Mac') }}</a>
+                            <a class="nav-link" href="{{ route('posts.index') }}">{{__('Príspevky') }}</a>
 						@auth
                             <a class="nav-link" href="{{ route('user.index') }}">{{__('Používatelia') }}</a>
                         @endauth

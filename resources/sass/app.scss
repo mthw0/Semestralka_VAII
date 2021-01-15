@@ -10,10 +10,6 @@
 $siva: #e3e4e6;
 $fontNadpisov: "Andale Mono", monospace;
 
-body {
-    margin-bottom: 50px;
-}
-
 h1 {
     font-family: $fontNadpisov;
     font-size: 20px;
@@ -71,7 +67,6 @@ td {
 .content {
     margin-left: 10%;
     margin-right: 10%;
-
 }
 
 .card {
@@ -115,5 +110,26 @@ figcaption {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
 
+#tlacidla
+{
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pridat {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#oramovanie {
+    padding: 20px;
+}
+
+#nadpis { //21
+    padding-top: 0px;
+    padding-bottom: 0px;
 }

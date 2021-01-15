@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,9 +22,16 @@ Route::get('/', function () {
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('home', ['name' => 'James']);
+});
 Route::get('/linux', [App\Http\Controllers\LinuxController::class, 'index'])->name('linux');
 Route::get('/windows', [App\Http\Controllers\WindowsController::class, 'index'])->name('windows');
 Route::get('/mac', [App\Http\Controllers\MacController::class, 'index'])->name('mac');
+
+//Route::get('/posts', PostController::class . '@index');
+Route::get('/posts', [App\Http\Controllers\PostController::class, 'index'])->name('posts');
+Route::resource('posts', 'App\Http\Controllers\PostController');
 
 Auth::routes();
 

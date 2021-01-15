@@ -1,0 +1,1 @@
+Medzi použité technológie patrí: Laravel framework, AJAX, JavaScript, a iné.
