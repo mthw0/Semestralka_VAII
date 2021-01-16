@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <script type="text/javascript" src="{{ URL::asset('js/linux_obrazok.js') }}"></script>
+    <script src="{{ URL::asset('js/linux_obrazok.js') }}"></script>
 <div class="content">
     <h1>Windows 10</h1>
     <p>

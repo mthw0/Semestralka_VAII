@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <script type="text/javascript" src="{{ URL::asset('js/ajax1.js') }}"></script>
+    <script src="{{ URL::asset('js/ajax1.js') }}"></script>
 
 
     <div class="content">

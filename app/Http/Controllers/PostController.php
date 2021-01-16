@@ -40,7 +40,7 @@ class PostController extends Controller
     {
         $validated = $request->validate([
             'title'    => 'required|string|unique:posts|min:5|max:100',
-            'content'  => 'required|string|min:5|max:2000',
+            'content'  => 'required|string|min:5',
             'category' => 'required|string|max:30'
         ]);
 
@@ -48,7 +48,7 @@ class PostController extends Controller
 
         $post = Post::create($validated);
 
-        return redirect(route('posts.show', $post))->with('notification', 'Post created!');
+        return redirect(route('posts.show', $post));
     }
 
     /**
@@ -83,8 +83,8 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $validated = $request->validate([
-            'title'    => 'required|string|unique:posts|min:5|max:100',
-            'content'  => 'required|string|min:5|max:2000',
+            'title'    => 'required|string|min:5|max:100',
+            'content'  => 'required|string|min:5',
             'category' => 'required|string|max:30'
         ]);
 
@@ -92,7 +92,7 @@ class PostController extends Controller
 
         $post->update($validated);
 
-        return redirect(route('posts.show', $post))->with('notification', 'Post updated!');
+        return redirect(route('posts.show', $post));
     }
 
     /**
@@ -104,7 +104,6 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-
-        return redirect(route('posts.index'))->with('notification', '"' . $post->title .  '" deleted!');
+        return redirect(route('posts.index'));
     }
 }

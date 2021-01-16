@@ -1,6 +1,6 @@
-<div class="content card" id="oramovanie">
+<div class="content card oramovanie">
     <a href="{{ route('posts.show', [$post->slug]) }}">
-        <h1 id="nadpis">{{ $post->title }}</h1>
+        <h1 class="nadpis">{{ $post->title }}</h1>
     </a>
     <p><b>Vytvorené:</b> {{ $post->created_at->diffForHumans() }}</p>
     <p><b>Kategória:</b> {{ $post->category }}</p>

@@ -11012,6 +11012,7 @@ figcaption {
   margin-top: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 50px;
 }
 
 .pridat {
@@ -11020,7 +11021,7 @@ figcaption {
   margin-right: auto;
 }
 
-#oramovanie {
+.oramovanie {
   padding: 20px;
 }
 

@@ -21,8 +21,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+                <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
+
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Domov
                 </a>
@@ -33,10 +34,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                            <a class="nav-link" href="{{ route('linux') }}">{{__('Linux') }}</a>
-                            <a class="nav-link" href="{{ route('windows') }}">{{__('Windows') }}</a>
-                            <a class="nav-link" href="{{ route('mac') }}">{{__('Mac') }}</a>
-                            <a class="nav-link" href="{{ route('posts.index') }}">{{__('Príspevky') }}</a>
+                        <li>
+                            <a class="nav-link" href="{{ route('posts.index') }}">{{__('Články') }}</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Operačné systémy
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link" href="{{ route('linux') }}">{{__('Linux') }}</a>
+                                <a class="nav-link" href="{{ route('windows') }}">{{__('Windows') }}</a>
+                                <a class="nav-link" href="{{ route('mac') }}">{{__('Mac') }}</a>
+                            </div>
+
+                        </li>
+
+
 						@auth
                             <a class="nav-link" href="{{ route('user.index') }}">{{__('Používatelia') }}</a>
                         @endauth
