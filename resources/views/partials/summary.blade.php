@@ -2,8 +2,8 @@
     <a href="{{ route('posts.show', [$post->slug]) }}">
         <h1 class="nadpis">{{ $post->title }}</h1>
     </a>
-    <p><b>Vytvorené:</b> {{ $post->created_at->diffForHumans() }}</p>
-    <p><b>Kategória:</b> {{ $post->category }}</p>
+    <p><span class="created">Vytvorené: </span>{{ $post->created_at->diffForHumans() }}</p>
+    <p><span class="created">Kategória: </span>{{ $post->category }}</p>
     <p>{!! nl2br(e($post->content)) !!}</p>
 
     @auth

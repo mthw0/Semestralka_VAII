@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+    <script src="{{ URL::asset('js/showHint.js') }}"></script>
     <h1 class="title">Vytvoriť nový príspevok</h1>
 
     <form class="pridat" method="post" action="{{ route('posts.store') }}">
@@ -20,15 +20,12 @@
             <textarea name="content" class="form-control" placeholder="Obsah" minlength="5" maxlength="2000" required rows="10">{{ old('content') }}</textarea>
         </div>
 
-        <div class="form-group">
-            <label class="label">Kategória:</label>
-            <select class="form-select" name="category" required>
-                <option value="" disabled selected>Vybrať kategóriu</option>
-                <option value="Linux" {{ old('category') === 'Linux' ? 'selected' : null }}>Linux</option>
-                <option value="Windows" {{ old('category') === 'Windows' ? 'selected' : null }}>Windows</option>
-                <option value="Mac" {{ old('category') === 'Mac' ? 'selected' : null }}>Mac</option>
-                <option value="Ostatné" {{ old('category') === 'Ostatné' ? 'selected' : null }}>Ostatné</option>
-            </select>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Kategória: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="fname" name="category" required onkeyup="showHint(this.value)">
+            </div>
+            <p>Dostupné kategórie: <span id="txtHint"></span></p>
         </div>
 
         <div class="form-group">

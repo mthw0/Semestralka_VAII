@@ -4,14 +4,17 @@
 
 @section('content')
 
+    <div class="tlacidla">
+        <a href="{{ route('posts.create') }}" class="btn btn-success">
+            <strong>Nový príspevok</strong>
+        </a>
+    </div>
+
     @foreach ($posts as $post)
         @include('partials.summary')
     @endforeach
 
-    <div id="tlacidla">
-        <a href="{{ route('posts.index') }}" class="btn btn-primary">
-            Všetky príspevky
-        </a>
+    <div class="tlacidla">
         <a href="{{ route('posts.create') }}" class="btn btn-success">
             <strong>Nový príspevok</strong>
         </a>
