@@ -17,7 +17,8 @@
                             <a href="{{route('user.create')}}" class="btn btn-sm btn-success" role="button">Pridať nového používateľa</a>
                         </div>
 
-                        {!! $grid->show() !!}
+                        <div id="tabulka_pouzivatelov">{!! $grid->show() !!}</div>
+
                     </div>
                 </div>
             </div>

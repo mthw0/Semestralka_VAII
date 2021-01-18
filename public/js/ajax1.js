@@ -6,6 +6,6 @@ function loadDoc() {
                 this.responseText;
         }
     };
-    xhttp.open("GET", "public/info.txt", true);
+    xhttp.open("GET", "/blog/public/info.txt", true);
     xhttp.send();
 }

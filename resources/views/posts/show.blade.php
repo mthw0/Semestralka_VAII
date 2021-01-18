@@ -5,6 +5,8 @@
 
     @include('partials.summary')
 
+    <script src="{{ URL::asset('js/koment.js') }}"></script>
+
     <div class="content card oramovanie">
         <h4>Komentáre</h4>
         @include('posts.commentsDisplay', ['comments' => $post->comments, 'post_id' => $post->id])

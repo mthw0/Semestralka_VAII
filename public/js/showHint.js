@@ -1,6 +1,6 @@
 function showHint(str) {
     if (str.length == 0) {
-        document.getElementById("txtHint").innerHTML = "Linux Windows Mac Android BSD iOS Ostatné Nezadané";
+        document.getElementById("txtHint").innerHTML = "";
         return;
     } else {
         var xmlhttp = new XMLHttpRequest();
@@ -9,7 +9,7 @@ function showHint(str) {
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "../getHint.php?q=" + str, true);
+        xmlhttp.open("GET", "/blog/public/getHint.php?q=" + str, true);
         xmlhttp.send();
     }
 }

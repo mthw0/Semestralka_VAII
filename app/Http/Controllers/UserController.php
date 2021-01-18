@@ -19,13 +19,14 @@ class UserController extends Controller
 
        $grid = new Datagrid($users, $request->get('f', []));
 
-       $grid->setColumn('name','Celé meno')
+       $grid
+           ->setColumn('name','Celé meno')
            ->setColumn('email', 'Emailová adresa')
            ->setActionColumn([
                'wrapper'=>function($value,$row)
                {
-                   return '<a href="' . route('user.edit',[$row->id]) . '"title="Edit" class="btn btn-sm btn-primary">✎ Upraviť</a>
-                   <a href="' . route('user.delete', [$row->id]) . '"title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confirm="Ste si istý?">🗑 Vymazať</a>';
+                   return '<a href="' . route('user.edit',[$row->id]) . '" title="Edit" class="btn btn-sm btn-primary">✎ Upraviť</a>
+                   <a href="' . route('user.delete', [$row->id]) . '" title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confirm="Ste si istý?">🗑 Vymazať</a>';
 
                }
           ]);
