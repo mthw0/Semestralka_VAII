@@ -15,7 +15,7 @@ Route::get('/mac', [App\Http\Controllers\MacController::class, 'index'])->name('
 Route::get('/posts', [App\Http\Controllers\PostController::class, 'index'])->name('posts');
 Route::resource('posts', 'App\Http\Controllers\PostController');
 Route::resource('comments', 'App\Http\Controllers\CommentController');
-
+Route::get('/admin_home', [App\Http\Controllers\AdminController::class, 'index'])->name('admin_home');
 
 
 Auth::routes();

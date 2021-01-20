@@ -26,5 +26,5 @@ if ($q !== "") {
     }
 }
 
-echo $hint === "" ? "Žiadne kategórie začínajúce týmto písmenom" : $hint;
+echo $hint === "" ? "Linux Windows Mac Android BSD iOS Ostatné Nezadané" : $hint;
 ?>

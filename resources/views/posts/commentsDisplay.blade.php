@@ -1,7 +1,7 @@
 @foreach($comments as $comment)
 
     <div class="display-comment card oramovanie_male" @if($comment->parent_id != null) @endif>
-        <strong>{{ $comment->user->name }}</strong>
+        <strong> {{ $comment->user->name ?? '[Deleted]' }} </strong>
         <p>{{ $comment->body }}</p>
         <form method="post" action="{{ route('comments.store') }}">
             @csrf
@@ -18,8 +18,8 @@
                 </div>
                 <div class="form-group row row-cols-2">
 
-                    <a style="display: none" id='koment_send{{ $comment->id }}' type="submit"
-                       class="btn btn-success">Odoslať</a>
+                    <input style="display: none" id='koment_send{{ $comment->id }}' type="submit"
+                       class="btn btn-success" value="Odoslať">
 
                     <a style="display: none" id='koment_hide{{ $comment->id }}'
                        onclick="hideComment({{ $comment->id }})" class="btn btn-danger">
